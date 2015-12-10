@@ -1,0 +1,12 @@
+/Users/Cherry/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20151209-32560-btiod8.rb extconf.rb
+
+make "DESTDIR=" clean
+make: *** No rule to make target `clean'.  Stop.
+
+make "DESTDIR="
+echo "Nada."
+Nada.
+
+make "DESTDIR=" install
+echo "Nada."
+Nada.
