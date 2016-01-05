@@ -1,38 +1,38 @@
 require "rails_helper"
 
-RSpec.describe ComentsController, type: :routing do
+RSpec.describe commentsController, type: :routing do
   describe "routing" do
 
     it "routes to #index" do
-      expect(:get => "/coments").to route_to("coments#index")
+      expect(:get => "/comments").to route_to("comments#index")
     end
 
     it "routes to #new" do
-      expect(:get => "/coments/new").to route_to("coments#new")
+      expect(:get => "/comments/new").to route_to("comments#new")
     end
 
     it "routes to #show" do
-      expect(:get => "/coments/1").to route_to("coments#show", :id => "1")
+      expect(:get => "/comments/1").to route_to("comments#show", :id => "1")
     end
 
     it "routes to #edit" do
-      expect(:get => "/coments/1/edit").to route_to("coments#edit", :id => "1")
+      expect(:get => "/comments/1/edit").to route_to("comments#edit", :id => "1")
     end
 
     it "routes to #create" do
-      expect(:post => "/coments").to route_to("coments#create")
+      expect(:post => "/comments").to route_to("comments#create")
     end
 
     it "routes to #update via PUT" do
-      expect(:put => "/coments/1").to route_to("coments#update", :id => "1")
+      expect(:put => "/comments/1").to route_to("comments#update", :id => "1")
     end
 
     it "routes to #update via PATCH" do
-      expect(:patch => "/coments/1").to route_to("coments#update", :id => "1")
+      expect(:patch => "/comments/1").to route_to("comments#update", :id => "1")
     end
 
     it "routes to #destroy" do
-      expect(:delete => "/coments/1").to route_to("coments#destroy", :id => "1")
+      expect(:delete => "/comments/1").to route_to("comments#destroy", :id => "1")
     end
 
   end

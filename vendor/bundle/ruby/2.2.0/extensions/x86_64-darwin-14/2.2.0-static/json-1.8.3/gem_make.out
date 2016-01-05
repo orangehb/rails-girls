@@ -1,4 +1,4 @@
-/Users/Cherry/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20151209-32560-ktm722.rb extconf.rb
+/Users/Cherry/.rvm/rubies/ruby-2.2.0/bin/ruby -r ./siteconf20160105-28298-qxc6ja.rb extconf.rb
 creating Makefile
 
 make "DESTDIR=" clean

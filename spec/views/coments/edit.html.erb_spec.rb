@@ -1,24 +1,24 @@
 require 'rails_helper'
 
-RSpec.describe "coments/edit", type: :view do
+RSpec.describe "comments/edit", type: :view do
   before(:each) do
-    @coment = assign(:coment, Coment.create!(
+    @comment = assign(:comment, Comment.create!(
       :user_name => "MyString",
       :body => "MyText",
       :idea_id => 1
     ))
   end
 
-  it "renders the edit coment form" do
+  it "renders the edit comment form" do
     render
 
-    assert_select "form[action=?][method=?]", coment_path(@coment), "post" do
+    assert_select "form[action=?][method=?]", comment_path(@comment), "post" do
 
-      assert_select "input#coment_user_name[name=?]", "coment[user_name]"
+      assert_select "input#comment_user_name[name=?]", "comment[user_name]"
 
-      assert_select "textarea#coment_body[name=?]", "coment[body]"
+      assert_select "textarea#comment_body[name=?]", "comment[body]"
 
-      assert_select "input#coment_idea_id[name=?]", "coment[idea_id]"
+      assert_select "input#comment_idea_id[name=?]", "comment[idea_id]"
     end
   end
 end

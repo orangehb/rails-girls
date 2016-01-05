@@ -1,4 +1,4 @@
-/Users/Cherry/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20151209-32560-xar4x0.rb extconf.rb
+/Users/Cherry/.rvm/rubies/ruby-2.2.0/bin/ruby -r ./siteconf20160105-28298-l1lgpf.rb extconf.rb
 checking for sqlite3.h... yes
 checking for sqlite3_libversion_number() in -lsqlite3... yes
 checking for rb_proc_arity()... yes
@@ -23,6 +23,7 @@ compiling exception.c
 compiling sqlite3.c
 compiling statement.c
 linking shared-object sqlite3/sqlite3_native.bundle
+ld: warning: directory not found for option '-L/Users/haven/.sm/pkg/active/lib'
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 sqlite3_native.bundle ./.gem.20151209-32560-1bg7ae6/sqlite3
+/usr/bin/install -m 0755 sqlite3_native.bundle ./.gem.20160105-28298-p6zm1w/sqlite3

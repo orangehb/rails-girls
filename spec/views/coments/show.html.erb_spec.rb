@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe "coments/show", type: :view do
+RSpec.describe "comments/show", type: :view do
   before(:each) do
-    @coment = assign(:coment, Coment.create!(
+    @comment = assign(:comment, Comment.create!(
       :user_name => "User Name",
       :body => "MyText",
       :idea_id => 1

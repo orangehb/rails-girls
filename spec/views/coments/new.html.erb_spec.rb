@@ -1,24 +1,24 @@
 require 'rails_helper'
 
-RSpec.describe "coments/new", type: :view do
+RSpec.describe "comments/new", type: :view do
   before(:each) do
-    assign(:coment, Coment.new(
+    assign(:comment, Comment.new(
       :user_name => "MyString",
       :body => "MyText",
       :idea_id => 1
     ))
   end
 
-  it "renders new coment form" do
+  it "renders new comment form" do
     render
 
-    assert_select "form[action=?][method=?]", coments_path, "post" do
+    assert_select "form[action=?][method=?]", comments_path, "post" do
 
-      assert_select "input#coment_user_name[name=?]", "coment[user_name]"
+      assert_select "input#comment_user_name[name=?]", "comment[user_name]"
 
-      assert_select "textarea#coment_body[name=?]", "coment[body]"
+      assert_select "textarea#comment_body[name=?]", "comment[body]"
 
-      assert_select "input#coment_idea_id[name=?]", "coment[idea_id]"
+      assert_select "input#comment_idea_id[name=?]", "comment[idea_id]"
     end
   end
 end

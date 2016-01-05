@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20151222024709) do
 
-  create_table "coments", force: :cascade do |t|
+  create_table "comments", force: :cascade do |t|
     t.string   "user_name"
     t.text     "body"
     t.integer  "idea_id"
