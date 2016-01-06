@@ -232,6 +232,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.4.2, RVM: ruby-2.2.0 [railsgirls]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="responders (v2.1.1, RVM: ruby-2.2.0 [railsgirls]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="subexec (v0.2.3, RVM: ruby-2.2.0 [railsgirls]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.2, RVM: ruby-2.2.0 [railsgirls]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="warden (v1.2.4, RVM: ruby-2.2.0 [railsgirls]) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
